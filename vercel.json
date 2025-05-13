@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",  // Apply this header to all routes
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "ALLOWALL"  // Allows embedding in an iframe from any origin
+        }
+      ]
+    }
+  ]
+}
